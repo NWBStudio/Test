@@ -1,0 +1,29 @@
+@import "normalize.css";
+@import "master.scss";
+@import "hero.scss";
+
+@font-face {
+    font-family: "Alegreya Sans";
+    src: local("../fonts/AlegreyaSans/AlegreyaSans-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Alegreya Sans";
+    src: local("../fonts/AlegreyaSans-Bold.ttf") format("ttf");
+    font-weight: bold;
+}
+
+
+.container {
+    width: auto;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.page {
+    font-family: "Alegreya Sans", "sans-serif";
+    color:#ffffff;
+}
+
+
+
