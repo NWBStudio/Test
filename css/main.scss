@@ -17,7 +17,6 @@
     width: auto;
     max-width: 940px;
     margin: 0 auto;
-    padding: 0px 10px;
 }
 
 .page {
@@ -71,24 +70,78 @@
     justify-content: center;
     align-items: center;
 
-        &:hover {
-            background-color: #0b4d3c;
-        }
-        
-        &:active {
-            opacity: 80%;
-        }
+    &:hover {
+        background-color: #0b4d3c;
+    }
+    
+    &:active {
+        opacity: 80%;
+    }
 
-        &--theme--white {
-            background-color: #ffffff;
-            color: #0f5a47;
-        }
+    &--theme--white {
+        background-color: #ffffff;
+        color: #0f5a47;
+    }
 
-        &--theme--white:hover {
-            background-color: #ffffff;
-            box-shadow: 0 0 3px #000000;
-        }
+    &--theme--white:hover {
+        background-color: #ffffff;
+        box-shadow: 0 0 3px #000000;
+    }
 }
+
+.feature-snippet {
+    font-size: 16px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+
+    &__icon {
+        width: 44px;
+        height: 44px;
+        //Вытащил следующие стили из svg-файлов, цвет поменял на нужный, без них нормально не отрисовывается
+        fill: none;
+        stroke:#aef5fe;
+        stroke-width:0.5;
+        stroke-miterlimit:10;
+        margin-right: 8px;
+    }
+
+    &__info {
+        width: 70px;
+        height: 55px;
+        display: flex;
+    }
+}
+
+.dotted-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &__item {
+        margin: 0px 0px 15px 0px;
+        width: 6px;
+        height: 6px;
+        padding: 0px;
+    }
+
+    &__item--selected {
+        .dot__outter {
+            visibility: visible;
+        }
+    }
+    
+    &__item:last-child {
+        margin: 0px;
+    }
+}
+
+.dot__outter {
+    visibility: hidden;;
+}
+
+
+
 
 
 
