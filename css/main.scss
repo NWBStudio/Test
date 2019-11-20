@@ -81,12 +81,14 @@
     &--theme--white {
         background-color: #ffffff;
         color: #0f5a47;
+        
+        &:hover {
+            background-color: #ffffff;
+            box-shadow: 0 0 3px #000000;
+        }
     }
 
-    &--theme--white:hover {
-        background-color: #ffffff;
-        box-shadow: 0 0 3px #000000;
-    }
+    
 }
 
 .feature-snippet {

@@ -7,17 +7,19 @@
     &__inner {
         height: 625px;
         position: relative;
+        
+        &::after {
+            content: "";
+            background: url("../img/single-leaf.png") no-repeat;
+            width: 57px;
+            height: 98px;
+            position: absolute;
+            bottom: -48px;
+            left: -57px;
+        }
     }
 
-    &__inner::after {
-        content: "";
-        background: url("../img/single-leaf.png") no-repeat;
-        width: 57px;
-        height: 98px;
-        position: absolute;
-        bottom: -48px;
-        left: -57px;
-    }
+    
 
     &__header {
         margin-bottom: 90px;
