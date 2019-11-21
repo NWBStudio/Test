@@ -1,0 +1,92 @@
+@import "master.scss";
+
+.why {
+    background: #ffffff url("../img/why-bg-leaf.png") no-repeat left center;
+    position: relative;
+
+    &__inner {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    &__advantages {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background: url("../img/advantages-three-dots.png") no-repeat 30.5% 25%, url("../img/advantages-three-dots.png") no-repeat 69.5% 25%;
+    }
+
+    &::before {
+        @include bg-slice(161px, 232px, "../img/why-bg-raspberries.png");
+        bottom: -13vh;
+        left: 0;
+    }
+
+}
+
+.why-headline {
+    text-align: center;
+    padding-bottom: 50px;
+
+    &__title {
+        max-width: 415px;
+        text-align: center;
+    }
+
+    &__description {
+        @include grey-text;
+        max-width: 415px;
+        text-align: center;
+        display: block;
+        margin: 0px;
+    }
+}
+
+.advantage-snippet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__icon-holder {
+        width: 125px;
+        height: 125px;
+        background-color: #f2f5f4;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        fill: none;
+        stroke: #2a2a29;
+        stroke-width: 1;
+        stroke-miterlimit: 10;
+        //Вытащил следующие стили из svg-файлов, цвет поменял на нужный, без них нормально не отрисовывается
+        height: 70px;
+        width: 70px;
+    }
+
+    &__description {
+        max-width: 270px;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 27px;
+        font-weight: bold;
+        color: #000000;
+        margin: 0px;
+    }
+
+
+    &__info {
+        @include grey-text;
+        margin: 0px;
+    }
+}

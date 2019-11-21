@@ -1,3 +1,18 @@
 // Файл для объявления переменных, функций и прочех фишек SASS, импортируется в каждый scss файл.
 $extra-bold: 800;
+$title-black: #0d0d0d;
+$text-grey: #666666;
 
+@mixin grey-text {
+    color: $text-grey;
+    font-size: 18px;
+}
+
+@mixin bg-slice ($width, $height, $url) {
+    content: "";
+    background: url($url) no-repeat;
+    width: $width;
+    height: $height;
+    position: absolute;
+    z-index: 1;
+}
