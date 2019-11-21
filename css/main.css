@@ -1,22 +1,19 @@
 @import url(normalize.css);
 .hero {
-  background: #61c4d9 url("../img/hero-bg-branch.png") right no-repeat;
-  padding-top: 25px; }
+  background: #61c4d9 url("../img/hero-bg-branch.png") right no-repeat; }
   .hero__inner {
-    height: 625px;
-    position: relative; }
-  .hero__inner::after {
-    content: "";
-    background: url("../img/single-leaf.png") no-repeat;
-    width: 57px;
-    height: 98px;
-    position: absolute;
-    bottom: -48px;
-    left: -57px; }
-  .hero__header {
-    margin-bottom: 90px; }
-  .hero__headline {
-    margin-bottom: 68px; }
+    height: 100vh;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
   .hero__features {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -27,8 +24,16 @@
     max-width: 480px; }
   .hero__dotted-list {
     position: absolute;
-    top: 180px;
-    right: -30px; }
+    right: -30px;
+    top: 34vh; }
+  .hero::after {
+    content: "";
+    background: url("../img/single-leaf.png") no-repeat;
+    width: 57px;
+    height: 98px;
+    position: absolute;
+    bottom: -4vh;
+    left: 3.2vh; }
 
 .header {
   display: -webkit-box;
@@ -40,7 +45,8 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 38px; }
+  height: 38px;
+  padding-top: 3.5vh; }
   .header__logo {
     height: 38px;
     width: 53px; }
@@ -145,10 +151,10 @@
   .btn--theme--white {
     background-color: #ffffff;
     color: #0f5a47; }
-  .btn--theme--white:hover {
-    background-color: #ffffff;
-    -webkit-box-shadow: 0 0 3px #000000;
-    box-shadow: 0 0 3px #000000; }
+    .btn--theme--white:hover {
+      background-color: #ffffff;
+      -webkit-box-shadow: 0 0 3px #000000;
+      box-shadow: 0 0 3px #000000; }
 
 .feature-snippet {
   font-size: 16px;
@@ -186,9 +192,9 @@
   -ms-flex-pack: start;
   justify-content: flex-start; }
   .dotted-list__item {
-    margin: 0px 0px 15px 0px;
-    width: 6px;
-    height: 6px;
+    margin: 0 0 1.36vh 0;
+    width: 0.55vh;
+    height: 0.55vh;
     padding: 0px; }
   .dotted-list__item--selected .dot__outter {
     visibility: visible; }

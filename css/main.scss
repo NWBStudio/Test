@@ -121,9 +121,9 @@
     justify-content: flex-start;
 
     &__item {
-        margin: 0px 0px 15px 0px;
-        width: 6px;
-        height: 6px;
+        margin: 0 0 1.36vh 0;
+        width: 0.55vh;
+        height: 0.55vh;
         padding: 0px;
     }
 
@@ -136,6 +136,7 @@
     &__item:last-child {
         margin: 0px;
     }
+    
 }
 
 .dot__outter {
