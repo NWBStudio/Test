@@ -1,7 +1,7 @@
 @import "master.scss";
 
 .hero {
-    background: #61c4d9 url("../img/hero-bg-branch.png") right no-repeat;
+    background: url("../img/single-leaf.png") no-repeat 3.2vh 104vh, #61c4d9 url("../img/hero-bg-branch.png") right no-repeat;
     
     &__inner {
         height: 100vh;
@@ -24,13 +24,10 @@
     }
 
     &::after {
-        content: "";
-        background: url("../img/single-leaf.png") no-repeat;
-        width: 57px;
-        height: 98px;
-        position: absolute;
+        @include bg-slice(57px, 98px,"../img/single-leaf.png");
         bottom: -4vh;
         left: 3.2vh;
+        z-index: 1;
     }
     
 }
@@ -40,7 +37,7 @@
     justify-content: space-between;
     align-items: center;
     height: 38px;
-    padding-top: 3.5vh;
+    padding-top: 2.6vh;
 
     &__logo {
         height: 38px;
