@@ -14,7 +14,10 @@
     flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    width: auto;
+    max-width: 940px;
+    margin: 0 auto; }
   .hero__features {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -99,7 +102,10 @@
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    width: auto;
+    max-width: 940px;
+    margin: 0 auto; }
   .why__advantages {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -109,7 +115,7 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     background: url("../img/advantages-three-dots.png") no-repeat 30.5% 25%, url("../img/advantages-three-dots.png") no-repeat 69.5% 25%; }
-  .why::before {
+  .why::after {
     content: "";
     background: url("../img/why-bg-raspberries.png") no-repeat;
     width: 161px;
@@ -133,27 +139,48 @@
     display: block;
     margin: 0px; }
 
-.reviews__inner {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.reviews__main {
-  width: 100%; }
-
-.reviews__title {
-  padding-bottom: 40px; }
+.reviews {
+  position: relative; }
+  .reviews__inner {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: auto;
+    max-width: 940px;
+    margin: 0 auto; }
+  .reviews__main {
+    width: 100%; }
+  .reviews__title {
+    padding-bottom: 40px; }
+  .reviews::before {
+    content: "";
+    background: url("../img/reviews-bg-top-berries.png") no-repeat;
+    width: 150px;
+    height: 86px;
+    position: absolute;
+    z-index: 1;
+    top: 3.6vh;
+    right: 1.3vw; }
+  .reviews:after {
+    content: "";
+    background: url("../img/reviews-bg-left-bottom-berries.png") no-repeat;
+    width: 139px;
+    height: 288px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: -140px; }
 
 .user-review {
   height: 345px;
@@ -227,11 +254,6 @@
   font-family: "Alegreya Sans";
   src: local("../fonts/AlegreyaSans-Bold.ttf") format("ttf");
   font-weight: bold; }
-
-.container {
-  width: auto;
-  max-width: 940px;
-  margin: 0 auto; }
 
 .page {
   font-family: "Alegreya Sans", "Arial", "sans-serif";

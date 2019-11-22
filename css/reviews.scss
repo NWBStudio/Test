@@ -1,7 +1,7 @@
 @import "master.scss";
 
 .reviews {
-
+    position: relative;
     
     &__inner {
         height: 100vh;
@@ -9,6 +9,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @include container;
     }
 
     &__main {
@@ -19,9 +20,18 @@
         padding-bottom: 40px;
     }
 
+    &::before {
+        @include bg-slice(150px, 86px, "../img/reviews-bg-top-berries.png");
+        top: 3.6vh;
+        right: 1.3vw;
+    }
 
+    &:after {
+        @include bg-slice(139px, 288px, "../img/reviews-bg-left-bottom-berries.png");
+        left: 0;
+        bottom: -140px;
+    }
 }
-
 
 .user-review {
     height: 345px;

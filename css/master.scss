@@ -17,3 +17,9 @@ $text-grey: #666666;
     position: absolute;
     z-index: 1;
 }
+
+@mixin container($max-width:940px) {
+    width: auto;
+    max-width: $max-width;
+    margin: 0 auto;
+}

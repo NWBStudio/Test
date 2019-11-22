@@ -10,7 +10,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        @include container;
 
     }
 
@@ -21,12 +21,11 @@
         background: url("../img/advantages-three-dots.png") no-repeat 30.5% 25%, url("../img/advantages-three-dots.png") no-repeat 69.5% 25%;
     }
 
-    &::before {
+    &::after {
         @include bg-slice(161px, 232px, "../img/why-bg-raspberries.png");
         bottom: -13vh;
         left: 0;
     }
-
 }
 
 .why-headline {
