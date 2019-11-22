@@ -2,6 +2,7 @@
 
 .hero {
     background: url("../img/single-leaf.png") no-repeat 3.2vh 104vh, #61c4d9 url("../img/hero-bg-branch.png") right no-repeat;
+    position: relative;
     
     &__inner {
         height: 100vh;
@@ -15,6 +16,7 @@
         display: flex;
         justify-content: space-between;
         max-width: 480px;
+        margin-bottom: 45px;
     }
 
     &__dotted-list {

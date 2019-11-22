@@ -2,6 +2,7 @@
 @import "master.scss";
 @import "hero.scss";
 @import "why.scss";
+@import "reviews.scss";
 
 @font-face {
     font-family: "Alegreya Sans";
@@ -21,7 +22,7 @@
 }
 
 .page {
-    font-family: "Alegreya Sans", "sans-serif";
+    font-family: "Alegreya Sans", "Arial", "sans-serif";
     color: #ffffff;
     font-size: 30px;
 }
@@ -152,4 +153,48 @@
     font-size: 48px;
     text-transform: uppercase;
     margin: 0px;
+}
+
+.advantage-snippet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__icon-holder {
+        width: 125px;
+        height: 125px;
+        background-color: #f2f5f4;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        fill: none;
+        stroke: #2a2a29;
+        stroke-width: 1;
+        stroke-miterlimit: 10;
+        //Вытащил следующие стили из svg-файлов, цвет поменял на нужный, без них нормально не отрисовывается
+        height: 70px;
+        width: 70px;
+    }
+
+    &__description {
+        max-width: 270px;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 27px;
+        font-weight: bold;
+        color: #000000;
+        margin: 0px;
+    }
+
+
+    &__info {
+        @include grey-text;
+        margin: 0px;
+    }
 }
