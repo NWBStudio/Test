@@ -1,7 +1,5 @@
-@import "master.scss";
-
 .hero {
-    background: url("../img/single-leaf.png") no-repeat 3.2vh 104vh, #61c4d9 url("../img/hero-bg-branch.png") right no-repeat;
+    background: $bg-light-blue url("../../img/bg/hero-bg-branch.png") right no-repeat;
     position: relative;
     
     &__inner {
@@ -10,7 +8,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        @include container;
+        @include container();
     }
 
     &__features {
@@ -27,7 +25,7 @@
     }
 
     &::after {
-        @include bg-slice(57px, 98px,"../img/single-leaf.png");
+        @include bg-slice(57px, 98px,"../../img/bg/bg-single-leaf.png");
         bottom: -4vh;
         left: 3.2vh;
         z-index: 1;

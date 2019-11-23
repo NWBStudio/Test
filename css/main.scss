@@ -1,29 +1,34 @@
-@import "normalize.css";
-@import "master.scss";
-@import "hero.scss";
-@import "why.scss";
-@import "reviews.scss";
+$extra-bold: 800;
+$medium: 500;
+$black: #000000;
+$white: #ffffff;
+$title-black: #0d0d0d;
+$text-grey: #666666;
+$light-grey: #f2f5f4;
+$dark-grey: #2a2a29;
+$title-dark-grey: #323232;
+$btn-green: #0f5a47;
+$btn-green-hover: #0b4d3c;
+$bg-light-blue: #61c4d9;
+$icon-light-blue: #aef5fe;
 
-@font-face {
-    font-family: "Alegreya Sans";
-    src: local("../fonts/AlegreyaSans/AlegreyaSans-Regular.ttf") format("ttf");
-}
-
-@font-face {
-    font-family: "Alegreya Sans";
-    src: local("../fonts/AlegreyaSans-Bold.ttf") format("ttf");
-    font-weight: bold;
-}
+@import "./misc/normalize.scss";
+@import "./misc/mixins.scss";
+@import "./misc/fonts.scss";
+@import "./misc/layout.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/why.scss";
+@import "./blocks/reviews.scss";
 
 .page {
     font-family: "Alegreya Sans", "Arial", "sans-serif";
-    color: #ffffff;
+    color: $white;
     font-size: 30px;
 }
 
 .link {
     text-decoration: none;
-    color: #ffffff;
+    color: $white;
 }
 
 .phone-num {
@@ -35,7 +40,7 @@
     &__icon {
         width: 11px;
         height: 11px;
-        fill: #ffffff;
+        fill: $white;
         margin-right: 2px;
     }
 }
@@ -53,21 +58,21 @@
 
 .btn {
     text-decoration: none;
-    color: #ffffff;
+    color: $white;
     font-size: 19px;
     font-weight: $extra-bold;
     text-transform: uppercase;
     display: block;
     width: 156px;
     height: 58px;
-    background-color: #0f5a47;
+    background-color: $btn-green;
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     &:hover {
-        background-color: #0b4d3c;
+        background-color: $btn-green-hover;
     }
 
     &:active {
@@ -75,12 +80,12 @@
     }
 
     &--theme--white {
-        background-color: #ffffff;
-        color: #0f5a47;
+        background-color: $white;
+        color: $btn-green;
 
         &:hover {
-            background-color: #ffffff;
-            box-shadow: 0 0 3px #000000;
+            background-color: $white;
+            box-shadow: 0 0 3px $black;
         }
     }
 
@@ -98,7 +103,7 @@
         height: 44px;
         //Вытащил следующие стили из svg-файлов, цвет поменял на нужный, без них нормально не отрисовывается
         fill: none;
-        stroke: #aef5fe;
+        stroke: $icon-light-blue;
         stroke-width: 0.5;
         stroke-miterlimit: 10;
         margin-right: 8px;
@@ -141,13 +146,6 @@
 }
 
 
-.title {
-    color: $title-black;
-    font-weight: bold;
-    font-size: 48px;
-    text-transform: uppercase;
-    margin: 0px;
-}
 
 .advantage-snippet {
     display: flex;
@@ -157,7 +155,7 @@
     &__icon-holder {
         width: 125px;
         height: 125px;
-        background-color: #f2f5f4;
+        background-color: $light-grey;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -166,7 +164,7 @@
 
     &__icon {
         fill: none;
-        stroke: #2a2a29;
+        stroke: $dark-grey;
         stroke-width: 1;
         stroke-miterlimit: 10;
         //Вытащил следующие стили из svg-файлов, цвет поменял на нужный, без них нормально не отрисовывается
@@ -182,7 +180,7 @@
     &__title {
         font-size: 27px;
         font-weight: bold;
-        color: #000000;
+        color: $black;
         margin: 0px;
     }
 

@@ -1,7 +1,5 @@
-@import "master.scss";
-
 .why {
-    background: #ffffff url("../img/why-bg-leaf.png") no-repeat left center;
+    background: $white url("../../img/bg/why-bg-leaf.png") no-repeat left center;
     position: relative;
 
     &__inner {
@@ -18,11 +16,11 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
-        background: url("../img/advantages-three-dots.png") no-repeat 30.5% 25%, url("../img/advantages-three-dots.png") no-repeat 69.5% 25%;
+        background: url("../../img/bg/advantages-three-dots.png") no-repeat 30.5% 25%, url("../../img/bg/advantages-three-dots.png") no-repeat 69.5% 25%;
     }
 
     &::after {
-        @include bg-slice(161px, 232px, "../img/why-bg-raspberries.png");
+        @include bg-slice(161px, 232px, "../../img/bg/why-bg-raspberries.png");
         bottom: -13vh;
         left: 0;
     }
