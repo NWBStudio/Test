@@ -1,0 +1,51 @@
+.advantages {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: url("../img/bg/advantages-bg-three-dots.png") no-repeat 30.5% 25%, url("../img/bg/advantages-bg-three-dots.png") no-repeat 69.5% 25%;
+}
+
+.advantages__snippet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages__icon-holder {
+    width: 125px;
+    height: 125px;
+    background-color: $light-grey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages__icon {
+    fill: none;
+    stroke: $dark-grey;
+    stroke-width: 1;
+    stroke-miterlimit: 10;
+    //Вытащил следующие стили из svg-файлов, цвет поменял на нужный, без них нормально не отрисовывается
+    height: 70px;
+    width: 70px;
+}
+
+.advantages__description {
+    @include grey-text;
+    max-width: 270px;
+    text-align: center;
+}
+
+.advantages__title {
+    font-size: 27px;
+    font-weight: bold;
+    color: $black;
+    margin: 0px;
+}
+
+
+.advantages__info {
+    @include grey-text;
+    margin: 0px;
+}

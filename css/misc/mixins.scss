@@ -12,7 +12,7 @@
     z-index: 1;
 }
 
-@mixin container($max-width:940px) {
-    max-width: $max-width;
+@mixin container($width:940px) {
+    width: $width;
     margin: 0 auto;
 }

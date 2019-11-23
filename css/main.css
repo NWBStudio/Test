@@ -337,6 +337,7 @@ body {
 
 body {
   font-size: 18px;
+  line-height: 1.42;
   font-family: "Alegreya Sans", "Arial", "sans-serif";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -350,10 +351,6 @@ body {
   min-width: 960px;
   min-height: 100%;
   overflow: hidden; }
-
-.container {
-  width: 940px;
-  margin: 0 auto; }
 
 .section {
   height: 100vh;
@@ -419,7 +416,7 @@ button {
   z-index: 3; }
 
 .header__container {
-  max-width: 940px;
+  width: 940px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -466,36 +463,134 @@ button {
   line-height: 30px; }
 
 .hero {
-  background: #61c4d9 url("../../img/bg/hero-bg-branch.png") right no-repeat;
+  background: #61c4d9 url("../img/bg/hero-bg-branch.png") no-repeat right;
   position: relative; }
-  .hero__features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    max-width: 480px;
-    margin-bottom: 45px; }
-  .hero__dotted-list {
-    position: absolute;
-    right: -30px;
-    top: 34vh;
-    display: none; }
   .hero::after {
     content: "";
-    background: url("../../img/bg/bg-single-leaf.png") no-repeat;
+    background: url("../img/bg/bg-single-leaf.png") no-repeat;
     width: 57px;
     height: 98px;
     position: absolute;
     z-index: 1;
-    bottom: -4vh;
-    left: 3.2vh;
+    bottom: -45px;
+    left: 3.9vw;
     z-index: 1; }
 
-.hero__inner {
-  max-width: 940px;
+.hero__container {
+  width: 940px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative; }
+
+.hero__promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.hero__bars-pic {
+  margin-left: 100px;
+  margin-top: 9.2vh;
+  position: relative;
+  z-index: 1; }
+
+.hero__title {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+
+.hero__info {
+  font-size: 21px;
+  text-transform: none;
+  font-weight: normal;
+  line-height: 1.4;
+  max-width: 340px;
+  margin-bottom: 30px; }
+
+.hero__features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 480px;
+  position: absolute;
+  left: 0;
+  bottom: 45px; }
+
+.hero__feature-snippet {
+  font-size: 16px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.hero__feature-icon {
+  width: 44px;
+  height: 44px;
+  fill: none;
+  stroke: #aef5fe;
+  stroke-width: 0.5;
+  stroke-miterlimit: 10;
+  margin-right: 8px; }
+
+.btn {
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 800;
+  text-transform: uppercase;
+  width: 156px;
+  height: 58px;
+  background-color: #0f5a47;
+  border-radius: 30px;
+  padding: 20px 35px; }
+  .btn:hover {
+    background-color: #0b4d3c; }
+  .btn:active {
+    opacity: 80%; }
+  .btn--theme--white {
+    background-color: #ffffff;
+    color: #0f5a47; }
+    .btn--theme--white:hover {
+      background-color: #ffffff;
+      -webkit-box-shadow: 0 0 3px #000000;
+      box-shadow: 0 0 3px #000000; }
+
+.why {
+  background: #ffffff url("../img/bg/why-bg-leaf.png") no-repeat left center;
+  position: relative;
+  -ms-flex-line-pack: center;
+  align-content: center; }
+  .why::after {
+    content: "";
+    background: url("../img/bg/why-bg-raspberries.png") no-repeat;
+    width: 161px;
+    height: 232px;
+    position: absolute;
+    z-index: 1;
+    bottom: -105px;
+    left: 0; }
+
+.why__container {
+  width: 940px;
+  margin: 0 auto; }
+
+.why__promo {
+  text-align: center;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -503,94 +598,84 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
-.headline {
-  max-width: 400px;
+.why__title {
+  text-align: center; }
+
+.why__description {
+  color: #666666;
+  font-size: 18px;
+  text-align: center;
+  max-width: 415px; }
+
+.advantages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  max-height: 330px;
-  position: relative; }
-  .headline__title {
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0px 0px 5px 0px; }
-  .headline__info {
-    font-size: 21px;
-    margin: 0px 0px 30px 0px; }
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: url("../img/bg/advantages-bg-three-dots.png") no-repeat 30.5% 25%, url("../img/bg/advantages-bg-three-dots.png") no-repeat 69.5% 25%; }
 
-.choccos-berries {
-  position: absolute;
-  left: 495px;
-  top: -93px; }
+.advantages__snippet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
-.why {
-  background: #ffffff url("../../img/bg/why-bg-leaf.png") no-repeat left center;
-  position: relative; }
-  .why__inner {
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    max-width: 940px;
-    margin: 0 auto; }
-  .why__advantages {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    background: url("../../img/bg/advantages-three-dots.png") no-repeat 30.5% 25%, url("../../img/bg/advantages-three-dots.png") no-repeat 69.5% 25%; }
-  .why::after {
-    content: "";
-    background: url("../../img/bg/why-bg-raspberries.png") no-repeat;
-    width: 161px;
-    height: 232px;
-    position: absolute;
-    z-index: 1;
-    bottom: -13vh;
-    left: 0; }
+.advantages__icon-holder {
+  width: 125px;
+  height: 125px;
+  background-color: #f2f5f4;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
-.why-headline {
-  text-align: center;
-  padding-bottom: 50px; }
-  .why-headline__title {
-    max-width: 415px;
-    text-align: center; }
-  .why-headline__description {
-    color: #666666;
-    font-size: 18px;
-    max-width: 415px;
-    text-align: center;
-    display: block;
-    margin: 0px; }
+.advantages__icon {
+  fill: none;
+  stroke: #2a2a29;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  height: 70px;
+  width: 70px; }
+
+.advantages__description {
+  color: #666666;
+  font-size: 18px;
+  max-width: 270px;
+  text-align: center; }
+
+.advantages__title {
+  font-size: 27px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0px; }
+
+.advantages__info {
+  color: #666666;
+  font-size: 18px;
+  margin: 0px; }
 
 .reviews {
   position: relative; }
   .reviews__inner {
-    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -604,7 +689,7 @@ button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    max-width: 940px;
+    width: 940px;
     margin: 0 auto; }
   .reviews__main {
     width: 100%; }
@@ -612,16 +697,16 @@ button {
     padding-bottom: 40px; }
   .reviews::before {
     content: "";
-    background: url("../../img/bg/reviews-bg-top-berries.png") no-repeat;
+    background: url("../img/bg/reviews-bg-top-berries.png") no-repeat;
     width: 150px;
     height: 86px;
     position: absolute;
     z-index: 1;
-    top: 3.6vh;
+    top: 36px;
     right: 1.3vw; }
   .reviews:after {
     content: "";
-    background: url("../../img/bg/reviews-bg-left-bottom-berries.png") no-repeat;
+    background: url("../img/bg/reviews-bg-left-bottom-berries.png") no-repeat;
     width: 139px;
     height: 288px;
     position: absolute;
@@ -631,7 +716,7 @@ button {
 
 .user-review {
   height: 345px;
-  background: url("../../img/bg/review-bg-half-circle.jpg") no-repeat top center, #f8faf9 url("../../img/bg/review-bg-branch.jpg") no-repeat top right;
+  background: url("../img/bg/review-bg-half-circle.jpg") no-repeat top center, #f8faf9 url("../img/bg/review-bg-branch.jpg") no-repeat top right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -695,17 +780,17 @@ button {
 
 .fixed-menu {
   position: fixed;
-  top: 100px;
-  right: 60px;
+  top: 32vh;
+  right: 4.5vw;
   z-index: 2; }
 
 .fixed-menu__dot {
   display: block;
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
   border-radius: 50%;
   border: 1px solid transparent;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   position: relative; }
   .fixed-menu__dot--active {
     border-color: #ffffff; }
@@ -737,62 +822,6 @@ button {
     fill: #ffffff;
     margin-right: 2px; }
 
-.btn {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 19px;
-  font-weight: 800;
-  text-transform: uppercase;
-  display: block;
-  width: 156px;
-  height: 58px;
-  background-color: #0f5a47;
-  border-radius: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  .btn:hover {
-    background-color: #0b4d3c; }
-  .btn:active {
-    opacity: 80%; }
-  .btn--theme--white {
-    background-color: #ffffff;
-    color: #0f5a47; }
-    .btn--theme--white:hover {
-      background-color: #ffffff;
-      -webkit-box-shadow: 0 0 3px #000000;
-      box-shadow: 0 0 3px #000000; }
-
-.feature-snippet {
-  font-size: 16px;
-  height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
-  .feature-snippet__icon {
-    width: 44px;
-    height: 44px;
-    fill: none;
-    stroke: #aef5fe;
-    stroke-width: 0.5;
-    stroke-miterlimit: 10;
-    margin-right: 8px; }
-  .feature-snippet__info {
-    width: 70px;
-    height: 55px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-
 .dotted-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -816,48 +845,3 @@ button {
 
 .dot__outter {
   visibility: hidden; }
-
-.advantage-snippet {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  .advantage-snippet__icon-holder {
-    width: 125px;
-    height: 125px;
-    background-color: #f2f5f4;
-    border-radius: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .advantage-snippet__icon {
-    fill: none;
-    stroke: #2a2a29;
-    stroke-width: 1;
-    stroke-miterlimit: 10;
-    height: 70px;
-    width: 70px; }
-  .advantage-snippet__description {
-    max-width: 270px;
-    text-align: center; }
-  .advantage-snippet__title {
-    font-size: 27px;
-    font-weight: bold;
-    color: #000000;
-    margin: 0px; }
-  .advantage-snippet__info {
-    color: #666666;
-    font-size: 18px;
-    margin: 0px; }

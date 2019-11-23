@@ -2,7 +2,6 @@
     position: relative;
     
     &__inner {
-        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -19,13 +18,13 @@
     }
 
     &::before {
-        @include bg-slice(150px, 86px, "../../img/bg/reviews-bg-top-berries.png");
-        top: 3.6vh;
+        @include bg-slice(150px, 86px, "../img/bg/reviews-bg-top-berries.png");
+        top: 36px;
         right: 1.3vw;
     }
 
     &:after {
-        @include bg-slice(139px, 288px, "../../img/bg/reviews-bg-left-bottom-berries.png");
+        @include bg-slice(139px, 288px, "../img/bg/reviews-bg-left-bottom-berries.png");
         left: 0;
         bottom: -140px;
     }
@@ -34,7 +33,7 @@
 .user-review {
     height: 345px;
     
-    background: url("../../img/bg/review-bg-half-circle.jpg") no-repeat top center, #f8faf9 url("../../img/bg/review-bg-branch.jpg") no-repeat top right, ;
+    background: url("../img/bg/review-bg-half-circle.jpg") no-repeat top center, #f8faf9 url("../img/bg/review-bg-branch.jpg") no-repeat top right, ;
     display: flex;
     flex-wrap: wrap;
     align-items: center;

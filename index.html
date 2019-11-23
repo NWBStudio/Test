@@ -7,173 +7,183 @@
     <title>Chocco</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body">
-    <header class="header">
-        <div class="header__container">
-            <!-- <img src="img/content/header__logo.png" class="logo"></img> -->
-            <span class="logo">chocco</span>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">О нас</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Батончики</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Команда</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Меню</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Отзывы</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Как мы работаем</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <a href="tel:88009039090" class="link phone-num">
-                <svg class="phone-num__icon">
-                    <use xlink:href="sprites/icon-sprite.svg#phone"></use>
-                </svg>
-                8 800 903 90 90
-            </a>
-        </div>
-    </header>
-    <section class="section hero">
-        <div class="hero__inner">
-            <section class="headline hero__headline">
-                <h1 class="headline__title">натуральные шоколадные батончики</h1>
-                <p class="headline__info">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
-                <a href="#" class="btn btn--theme--white">заказать</a>
-                <img src="img/content/choccos&berries.png" alt="Chocco" class="choccos-berries">
-            </section>
-            <div class="hero__features">
-                <div class="feature-snippet hero__feature-snippet">
-                    <svg class="feature-snippet__icon">
-                        <use xlink:href="sprites/icon-sprite.svg#leaves"></use>
+<body>
+    <div class="wrapper" >
+        <header class="header">
+            <div class="header__container">
+                <span class="logo">chocco</span>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Батончики</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Команда</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Меню</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Отзывы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Как мы работаем</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel:88009039090" class="link phone-num">
+                    <svg class="phone-num__icon">
+                        <use xlink:href="sprites/icon-sprite.svg#phone"></use>
                     </svg>
-                    <span class="feature-snippet__info">100% натуральный продукт</span>
-                </div>
-                <div class="feature-snippet hero__feature-snippet">
-                    <svg class="feature-snippet__icon">
-                        <use xlink:href="sprites/icon-sprite.svg#truck"></use>
-                    </svg>
-                    <span class="feature-snippet__info">3-5 дней доставка по РФ</span>
-                </div>
-                <div class="feature-snippet hero__feature-snippet">
-                    <svg class="feature-snippet__icon">
-                        <use xlink:href="sprites/icon-sprite.svg#soft-ruler"></use>
-                    </svg>
-                    <span class="feature-snippet__info">Не портит фигуру</span>
-                </div>
+                    8 800 903 90 90
+                </a>
             </div>
-        </div>
-    </section>
-    <div class="why">
-        <div class="why__inner">
-            <div class="why-headline">
-                <h2 class="title why-headline__title">почему chocco?</h2>
-                <p class="why-headline__description">В нашем мире все происходит очень быстро, поэтому мы делаем
-                    батончики, которые удобно взять с собой.</p>
-            </div>
-            <div class="why__advantages">
-                <div class="advantage-snippet">
-                    <div class="advantage-snippet__icon-holder">
-                        <svg class="advantage-snippet__icon">
-                            <use xlink:href="sprites/icon-sprite.svg#healthy"></use>
-                        </svg>
+        </header>
+        <section class="section hero">
+            <div class="hero__container">
+                <div class="hero__promo">
+                    <div class="hero__left">
+                        <h1 class="hero__title">
+                            натуральные шоколадные батончики
+                            <div class="hero__info">
+                            <p>Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
+                            </div>
+                        </h1>
+                        <button class="btn btn--theme--white" type="button">заказать</button>
                     </div>
-                    <div class="advantage-snippet__description">
-                        <h3 class="advantage-snippet__title">Полезно</h3>
-                        <p class="advantage-snippet__info">Натуральность - ключевое качествонашей продукции. Мы
-                            используем только природные ингредиенты.</p>
+                    <div class="hero__right">
+                        <img src="img/content/choccos&berries.png" alt="Батончики" class="hero__bars-pic">
                     </div>
                 </div>
-                <div class="advantage-snippet">
-                    <div class="advantage-snippet__icon-holder">
-                        <svg class="advantage-snippet__icon">
-                            <use xlink:href="sprites/icon-sprite.svg#tasty"></use>
+                <div class="hero__features">
+                    <div class="feature-snippet hero__feature-snippet">
+                        <svg class="hero__feature-icon">
+                            <use xlink:href="sprites/icon-sprite.svg#leaves"></use>
                         </svg>
+                        <span class="feature-snippet__info">100% натуральный продукт</span>
                     </div>
-                    <div class="advantage-snippet__description">
-                        <h3 class="advantage-snippet__title">Вкусно</h3>
-                        <p class="advantage-snippet__info">Нежный, ненавязчивый, изысканный – так клиенты описывают
-                            вкусовые качества наших батончиков.</p>
-                    </div>
-                </div>
-                <div class="advantage-snippet">
-                    <div class="advantage-snippet__icon-holder">
-                        <svg class="advantage-snippet__icon">
-                            <use xlink:href="sprites/icon-sprite.svg#strong"></use>
+                    <div class="feature-snippet hero__feature-snippet">
+                        <svg class="hero__feature-icon">
+                            <use xlink:href="sprites/icon-sprite.svg#truck"></use>
                         </svg>
+                        <span class="feature-snippet__info">3-5 дней доставка по РФ</span>
                     </div>
-                    <div class="advantage-snippet__description">
-                        <h3 class="advantage-snippet__title">Питательно</h3>
-                        <p class="advantage-snippet__info">Высокое содержание качественного белка, а также всех
-                            необходимых витаминов и минералов.</p>
+                    <div class="feature-snippet hero__feature-snippet">
+                        <svg class="hero__feature-icon">
+                            <use xlink:href="sprites/icon-sprite.svg#soft-ruler"></use>
+                        </svg>
+                        <span class="feature-snippet__info">Не портит фигуру</span>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="section why">
+            <div class="why__container">
+                <div class="why__promo">
+                    <h2 class="title why__title">почему chocco?</h2>
+                    <div class="why__description">
+                        <p>В нашем мире все происходит очень быстро, поэтому мы делаем
+                            батончики, которые удобно взять с собой.</p>
+                    </div>
+                </div>
+                <div class="advantages">
+                    <div class="advantages__snippet">
+                        <div class="advantages__icon-holder">
+                            <svg class="advantages__icon">
+                                <use xlink:href="sprites/icon-sprite.svg#healthy"></use>
+                            </svg>
+                        </div>
+                            <h3 class="advantages__title">Полезно</h3>
+                            <div class="advantages__description">
+                                <p>Натуральность - ключевое качествонашей продукции. Мы
+                                    используем только природные ингредиенты.</p>
+                            </div>
+                    </div>
+                    <div class="advantages__snippet">
+                            <div class="advantages__icon-holder">
+                                <svg class="advantages__icon">
+                                    <use xlink:href="sprites/icon-sprite.svg#tasty"></use>
+                                </svg>
+                            </div>
+                                <h3 class="advantages__title">Вкусно</h3>
+                                <div class="advantages__description">
+                                <p>Нежный, ненавязчивый, изысканный – так клиенты описывают
+                                            вкусовые качества наших батончиков.</p>
+                            </div>
+                    </div>
+                    <div class="advantages__snippet">
+                            <div class="advantages__icon-holder">
+                                <svg class="advantages__icon">
+                                    <use xlink:href="sprites/icon-sprite.svg#strong"></use>
+                                </svg>
+                            </div>
+                                <h3 class="advantages__title">Питательно</h3>
+                                <div class="advantages__description">
+                                <p>Высокое содержание качественного белка, а также всех
+                                        необходимых витаминов и минералов.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section reviews">
+            <div class="reviews__inner">
+                <h2 class="title reviews__title">отзывы</h2>
+                <div class="reviews__main">
+                    <div class="user-review">
+                        <img src="img/content/user-fem-brown.jpg" alt="user avatar" class="user-review__pic">
+                        <div class="user-review__content">
+                            <h3 class="user-review__title">Лучший перекус</h3>
+                            <p class="user-review__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в
+                                разы. В течение дня сижу за компьютером
+                                и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда
+                                под рукой. Это приятно
+                                и удобно.</p>
+                            <span class="user-review__author">Алёна Хмельницкая</span>
+                        </div>
+                    </div>
+                    <div class="reviews-users">
+                        <img src="img/content/user-fem-brown.jpg" alt="user avatar small"
+                            class="reviews-users__pic reviews-users__pic--selected">
+                        <img src="img/content/user-fem-ginger.jpg" alt="user avatar small" class="reviews-users__pic">
+                        <img src="img/content/user-male.jpg" alt="user avatar small" class="reviews-users__pic">
+                    </div>
+                </div>
+            </div>
         </div>
+        <ul class="fixed-menu">
+            <li class="fixed-menu__item">
+              <a class="fixed-menu__dot fixed-menu__dot--active" href="#" aria-label="О нас"></a>
+            </li>
+            <li class="fixed-menu__item">
+              <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+            </li>
+            <li class="fixed-menu__item">
+              <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+            </li>
+            <li class="fixed-menu__item">
+              <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+            </li>
+            <li class="fixed-menu__item">
+              <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+            </li>
+            <li class="fixed-menu__item">
+              <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+            </li>
+            <li class="fixed-menu__item">
+              <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+            </li>
+            <li class="fixed-menu__item">
+              <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+            </li>
+          </ul>
     </div>
-    <div class="reviews">
-        <div class="reviews__inner">
-            <h2 class="title reviews__title">отзывы</h2>
-            <div class="reviews__main">
-                <div class="user-review">
-                    <img src="img/content/user-fem-brown.jpg" alt="user avatar" class="user-review__pic">
-                    <div class="user-review__content">
-                        <h3 class="user-review__title">Лучший перекус</h3>
-                        <p class="user-review__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в
-                            разы. В течение дня сижу за компьютером
-                            и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда
-                            под рукой. Это приятно
-                            и удобно.</p>
-                        <span class="user-review__author">Алёна Хмельницкая</span>
-                    </div>
-                </div>
-                <div class="reviews-users">
-                    <img src="img/content/user-fem-brown.jpg" alt="user avatar small"
-                        class="reviews-users__pic reviews-users__pic--selected">
-                    <img src="img/content/user-fem-ginger.jpg" alt="user avatar small" class="reviews-users__pic">
-                    <img src="img/content/user-male.jpg" alt="user avatar small" class="reviews-users__pic">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <ul class="fixed-menu">
-        <li class="fixed-menu__item">
-          <a class="fixed-menu__dot fixed-menu__dot--active" href="#" aria-label="О нас"></a>
-        </li>
-        <li class="fixed-menu__item">
-          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-        </li>
-        <li class="fixed-menu__item">
-          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-        </li>
-        <li class="fixed-menu__item">
-          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-        </li>
-        <li class="fixed-menu__item">
-          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-        </li>
-        <li class="fixed-menu__item">
-          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-        </li>
-        <li class="fixed-menu__item">
-          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-        </li>
-        <li class="fixed-menu__item">
-          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-        </li>
-      </ul>
-</body">
+</body>
 
 </html>

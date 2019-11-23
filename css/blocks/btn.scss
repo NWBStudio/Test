@@ -1,0 +1,29 @@
+.btn {
+    color: $white;
+    font-size: 19px;
+    font-weight: $extra-bold;
+    text-transform: uppercase;
+    width: 156px;
+    height: 58px;
+    background-color: $btn-green;
+    border-radius: 30px;
+    padding: 20px 35px;
+
+    &:hover {
+        background-color: $btn-green-hover;
+    }
+
+    &:active {
+        opacity: 80%;
+    }
+
+    &--theme--white {
+        background-color: $white;
+        color: $btn-green;
+
+        &:hover {
+            background-color: $white;
+            box-shadow: 0 0 3px $black;
+        }
+    }
+}

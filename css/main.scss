@@ -28,7 +28,9 @@ $icon-light-blue: #aef5fe;
 @import "./blocks/logo.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/hero.scss";
+@import "./blocks/btn.scss";
 @import "./blocks/why.scss";
+@import "./blocks/advantages.scss";
 @import "./blocks/reviews.scss";
 @import "./blocks/fixed-menu.scss";
 
@@ -48,66 +50,6 @@ $icon-light-blue: #aef5fe;
         height: 11px;
         fill: $white;
         margin-right: 2px;
-    }
-}
-
-.btn {
-    text-decoration: none;
-    color: $white;
-    font-size: 19px;
-    font-weight: $extra-bold;
-    text-transform: uppercase;
-    display: block;
-    width: 156px;
-    height: 58px;
-    background-color: $btn-green;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &:hover {
-        background-color: $btn-green-hover;
-    }
-
-    &:active {
-        opacity: 80%;
-    }
-
-    &--theme--white {
-        background-color: $white;
-        color: $btn-green;
-
-        &:hover {
-            background-color: $white;
-            box-shadow: 0 0 3px $black;
-        }
-    }
-
-
-}
-
-.feature-snippet {
-    font-size: 16px;
-    height: 60px;
-    display: flex;
-    justify-content: flex-start;
-
-    &__icon {
-        width: 44px;
-        height: 44px;
-        //Вытащил следующие стили из svg-файлов, цвет поменял на нужный, без них нормально не отрисовывается
-        fill: none;
-        stroke: $icon-light-blue;
-        stroke-width: 0.5;
-        stroke-miterlimit: 10;
-        margin-right: 8px;
-    }
-
-    &__info {
-        width: 70px;
-        height: 55px;
-        display: flex;
     }
 }
 
@@ -142,46 +84,3 @@ $icon-light-blue: #aef5fe;
 
 
 
-.advantage-snippet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &__icon-holder {
-        width: 125px;
-        height: 125px;
-        background-color: $light-grey;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__icon {
-        fill: none;
-        stroke: $dark-grey;
-        stroke-width: 1;
-        stroke-miterlimit: 10;
-        //Вытащил следующие стили из svg-файлов, цвет поменял на нужный, без них нормально не отрисовывается
-        height: 70px;
-        width: 70px;
-    }
-
-    &__description {
-        max-width: 270px;
-        text-align: center;
-    }
-
-    &__title {
-        font-size: 27px;
-        font-weight: bold;
-        color: $black;
-        margin: 0px;
-    }
-
-
-    &__info {
-        @include grey-text;
-        margin: 0px;
-    }
-}

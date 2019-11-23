@@ -5,7 +5,7 @@ body {
 
 body {
   font-size: 18px;
-  // line-height: 1.42; //до выяснения обстоятельств хД
+  line-height: 1.42; //самый распространённый размер по макету, для подстраховки
   font-family: "Alegreya Sans", "Arial", "sans-serif";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,11 +20,6 @@ body {
   min-width: 940px + 20px;
   min-height: 100%;
   overflow: hidden;
-}
-
-.container {
-  width: 940px;
-  margin: 0 auto;
 }
 
 .section {
