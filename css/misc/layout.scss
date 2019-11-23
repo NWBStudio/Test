@@ -6,11 +6,12 @@ body {
 body {
   font-size: 18px;
   // line-height: 1.42; //до выяснения обстоятельств хД
+  font-family: "Alegreya Sans", "Arial", "sans-serif";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  color: $black;
   background-color: $white;
+  color: $white;
 }
 
 .wrapper {
@@ -26,13 +27,13 @@ body {
   margin: 0 auto;
 }
 
-// .section {
-//   height: 100vh;
-//   min-height: 650px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-// }
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .title {
   color: $title-black;

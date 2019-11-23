@@ -2,14 +2,6 @@
     background: $bg-light-blue url("../../img/bg/hero-bg-branch.png") right no-repeat;
     position: relative;
     
-    &__inner {
-        height: 100vh;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        @include container();
-    }
 
     &__features {
         display: flex;
@@ -22,6 +14,7 @@
         position: absolute;
         right: -30px;
         top: 50vh - 16vh;
+        display: none;
     }
 
     &::after {
@@ -33,17 +26,11 @@
     
 }
 
-.header {
+.hero__inner {
+    @include container();
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    height: 38px;
-    padding-top: 2.6vh;
-
-    &__logo {
-        height: 38px;
-        width: 53px;
-    }
 }
 
 .headline {

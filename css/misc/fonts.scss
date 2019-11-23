@@ -20,3 +20,10 @@
     src: local("../../fonts/AlegreyaSans-Bold.ttf") format("ttf");
     font-weight: $extra-bold;
 }
+
+@font-face {
+    font-family: "Museo Sans Cyrl 500";
+    src: local("../../fonts/MuseoSansCyrl-500.woff") format("woff");
+    font-weight: $medium;
+}
+

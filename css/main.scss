@@ -1,5 +1,8 @@
+//font-weights
 $extra-bold: 800;
 $medium: 500;
+
+//colors
 $black: #000000;
 $white: #ffffff;
 $title-black: #0d0d0d;
@@ -12,19 +15,22 @@ $btn-green-hover: #0b4d3c;
 $bg-light-blue: #61c4d9;
 $icon-light-blue: #aef5fe;
 
+//normalize
 @import "./misc/normalize.scss";
+
+//setups
 @import "./misc/mixins.scss";
 @import "./misc/fonts.scss";
 @import "./misc/layout.scss";
+
+//blocks
+@import "./blocks/header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/nav.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/why.scss";
 @import "./blocks/reviews.scss";
-
-.page {
-    font-family: "Alegreya Sans", "Arial", "sans-serif";
-    color: $white;
-    font-size: 30px;
-}
+@import "./blocks/fixed-menu.scss";
 
 .link {
     text-decoration: none;
@@ -42,17 +48,6 @@ $icon-light-blue: #aef5fe;
         height: 11px;
         fill: $white;
         margin-right: 2px;
-    }
-}
-
-.nav {
-    width: 635px;
-    display: flex;
-    justify-content: space-between;
-
-    &__item {
-        font-size: 18px;
-        line-height: 30px;
     }
 }
 

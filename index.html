@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chocco</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="page">
-    <div class="hero">
+<body">
+    <header class="header">
+        <div class="header__container">
+            <!-- <img src="img/content/header__logo.png" class="logo"></img> -->
+            <span class="logo">chocco</span>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Батончики</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Команда</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Меню</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Отзывы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Как мы работаем</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="tel:88009039090" class="link phone-num">
+                <svg class="phone-num__icon">
+                    <use xlink:href="sprites/icon-sprite.svg#phone"></use>
+                </svg>
+                8 800 903 90 90
+            </a>
+        </div>
+    </header>
+    <section class="section hero">
         <div class="hero__inner">
-            <header class="header hero__header">
-                    <img class="header__logo" src="img/content/header__logo.png"></img>
-                    <nav class="nav">
-                        <a href="#" class="link nav__item">О нас</a>
-                        <a href="#" class="link nav__item">Батончики</a>
-                        <a href="#" class="link nav__item">Команда</a>
-                        <a href="#" class="link nav__item">Меню</a>
-                        <a href="#" class="link nav__item">Отзывы</a>
-                        <a href="#" class="link nav__item">Как мы работаем</a>
-                        <a href="#" class="link nav__item">Контакты</a>
-                    </nav>
-                    <a href="tel:88009039090" class="link phone-num">
-                        <svg class="phone-num__icon">
-                            <use xlink:href="sprites/icon-sprite.svg#phone"></use>
-                        </svg>
-                        8 800 903 90 90
-                    </a>
-            </header>
             <section class="headline hero__headline">
                 <h1 class="headline__title">натуральные шоколадные батончики</h1>
                 <p class="headline__info">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
@@ -53,69 +73,14 @@
                     <span class="feature-snippet__info">Не портит фигуру</span>
                 </div>
             </div>
-            <div class="dotted-list hero__dotted-list">
-                <a href="#" class="link dotted-list__item dotted-list__item--selected">
-                    <svg class="dot" height="19" width="19">
-                        <circle cx="9" cy="9" r="3" fill="white"></circle>
-                        <circle class="dot__outter" cx="9" cy="9" r="8" stroke="white" stroke-width="1" fill="none"></circle>
-                    </svg>
-                </a>
-                <a href="#" class="link dotted-list__item">
-                    <svg class="dot" height="19" width="19">
-                        <circle cx="9" cy="9" r="3" fill="white"></circle>
-                        <circle class="dot__outter" cx="9" cy="9" r="8" stroke="white" stroke-width="1" fill="none"></circle>
-                    </svg>
-                </a>
-                <a href="#" class="link dotted-list__item">
-                    <svg class="dot" height="19" width="19">
-                        <circle cx="9" cy="9" r="3" fill="white"></circle>
-                        <circle class="dot__outter" cx="9" cy="9" r="8" stroke="white" stroke-width="1" fill="none"></circle>
-                    </svg>
-                </a>
-                <a href="#" class="link dotted-list__item">
-                    <svg class="dot" height="19" width="19">
-                        <circle cx="9" cy="9" r="3" fill="white"></circle>
-                        <circle class="dot__outter" cx="9" cy="9" r="8" stroke="white" stroke-width="1" fill="none"></circle>
-                    </svg>
-                </a>
-                <a href="#" class="link dotted-list__item">
-                    <svg class="dot" height="19" width="19">
-                        <circle cx="9" cy="9" r="3" fill="white"></circle>
-                        <circle class="dot__outter" cx="9" cy="9" r="8" stroke="white" stroke-width="1" fill="none"></circle>
-                    </svg>
-                </a>
-                <a href="#" class="link dotted-list__item">
-                    <svg class="dot" height="19" width="19">
-                        <circle cx="9" cy="9" r="3" fill="white"></circle>
-                        <circle class="dot__outter" cx="9" cy="9" r="8" stroke="white" stroke-width="1" fill="none"></circle>
-                    </svg>
-                </a>
-                <a href="#" class="link dotted-list__item">
-                    <svg class="dot" height="19" width="19">
-                        <circle cx="9" cy="9" r="3" fill="white"></circle>
-                        <circle class="dot__outter" cx="9" cy="9" r="8" stroke="white" stroke-width="1" fill="none"></circle>
-                    </svg>
-                </a>
-                <a href="#" class="link dotted-list__item">
-                    <svg class="dot" height="19" width="19">
-                        <circle cx="9" cy="9" r="3" fill="white"></circle>
-                        <circle class="dot__outter" cx="9" cy="9" r="8" stroke="white" stroke-width="1" fill="none"></circle>
-                    </svg>
-                </a>
-                <a href="#" class="link dotted-list__item">
-                    <svg class="dot" height="19" width="19">
-                        <circle cx="9" cy="9" r="3" fill="white"></circle>
-                        <circle class="dot__outter" cx="9" cy="9" r="8" stroke="white" stroke-width="1" fill="none"></circle>
-                    </svg>
-                </a>
-            </div>         
         </div>
-    </div>
+    </section>
     <div class="why">
         <div class="why__inner">
             <div class="why-headline">
                 <h2 class="title why-headline__title">почему chocco?</h2>
-                <p class="why-headline__description">В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно взять с собой.</p>
+                <p class="why-headline__description">В нашем мире все происходит очень быстро, поэтому мы делаем
+                    батончики, которые удобно взять с собой.</p>
             </div>
             <div class="why__advantages">
                 <div class="advantage-snippet">
@@ -126,7 +91,8 @@
                     </div>
                     <div class="advantage-snippet__description">
                         <h3 class="advantage-snippet__title">Полезно</h3>
-                        <p class="advantage-snippet__info">Натуральность - ключевое качествонашей продукции. Мы используем только природные ингредиенты.</p>
+                        <p class="advantage-snippet__info">Натуральность - ключевое качествонашей продукции. Мы
+                            используем только природные ингредиенты.</p>
                     </div>
                 </div>
                 <div class="advantage-snippet">
@@ -137,7 +103,8 @@
                     </div>
                     <div class="advantage-snippet__description">
                         <h3 class="advantage-snippet__title">Вкусно</h3>
-                        <p class="advantage-snippet__info">Нежный, ненавязчивый, изысканный – так клиенты описывают вкусовые качества наших батончиков.</p>
+                        <p class="advantage-snippet__info">Нежный, ненавязчивый, изысканный – так клиенты описывают
+                            вкусовые качества наших батончиков.</p>
                     </div>
                 </div>
                 <div class="advantage-snippet">
@@ -148,7 +115,8 @@
                     </div>
                     <div class="advantage-snippet__description">
                         <h3 class="advantage-snippet__title">Питательно</h3>
-                        <p class="advantage-snippet__info">Высокое содержание качественного белка, а также всех необходимых витаминов и минералов.</p>
+                        <p class="advantage-snippet__info">Высокое содержание качественного белка, а также всех
+                            необходимых витаминов и минералов.</p>
                     </div>
                 </div>
             </div>
@@ -162,19 +130,50 @@
                     <img src="img/content/user-fem-brown.jpg" alt="user avatar" class="user-review__pic">
                     <div class="user-review__content">
                         <h3 class="user-review__title">Лучший перекус</h3>
-                        <p class="user-review__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером 
-                            и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно 
+                        <p class="user-review__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в
+                            разы. В течение дня сижу за компьютером
+                            и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда
+                            под рукой. Это приятно
                             и удобно.</p>
                         <span class="user-review__author">Алёна Хмельницкая</span>
                     </div>
                 </div>
                 <div class="reviews-users">
-                    <img src="img/content/user-fem-brown.jpg" alt="user avatar small" class="reviews-users__pic reviews-users__pic--selected">
+                    <img src="img/content/user-fem-brown.jpg" alt="user avatar small"
+                        class="reviews-users__pic reviews-users__pic--selected">
                     <img src="img/content/user-fem-ginger.jpg" alt="user avatar small" class="reviews-users__pic">
                     <img src="img/content/user-male.jpg" alt="user avatar small" class="reviews-users__pic">
                 </div>
             </div>
         </div>
     </div>
-</body>
+
+    <ul class="fixed-menu">
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__dot fixed-menu__dot--active" href="#" aria-label="О нас"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+        </li>
+      </ul>
+</body">
+
 </html>
