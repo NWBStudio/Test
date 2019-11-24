@@ -313,7 +313,7 @@ template {
 
 @font-face {
   font-family: "Alegreya Sans";
-  src: local("../../fonts/AlegreyaSans/AlegreyaSans-Regular.ttf") format("ttf");
+  src: local("../../fonts/AlegreyaSans//AlegreyaSans-Medium.ttf.ttf") format("ttf");
   font-weight: 500; }
 
 @font-face {
@@ -323,12 +323,12 @@ template {
 
 @font-face {
   font-family: "Alegreya Sans";
-  src: local("../../fonts/AlegreyaSans-Bold.ttf") format("ttf");
+  src: local("../../fonts/AlegreyaSans/AlegreyaSans-ExtraBold.ttf") format("ttf");
   font-weight: 800; }
 
 @font-face {
   font-family: "Museo Sans Cyrl 500";
-  src: local("../../fonts/MuseoSansCyrl-500.woff") format("woff");
+  src: local("../../fonts//MuseoSansCyr/MuseoSansCyrl-500.woff") format("woff");
   font-weight: 500; }
 
 html,
@@ -427,6 +427,20 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.phone-num {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Alegreya Sans";
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff; }
+
+.phone-num__icon {
+  width: 11px;
+  height: 11px;
+  fill: #ffffff;
+  margin-right: 2px; }
 
 .logo {
   font-family: "Museo Sans Cyrl 500";
@@ -675,26 +689,6 @@ button {
 
 .reviews {
   position: relative; }
-  .reviews__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 940px;
-    margin: 0 auto; }
-  .reviews__main {
-    width: 100%; }
-  .reviews__title {
-    padding-bottom: 40px; }
   .reviews::before {
     content: "";
     background: url("../img/bg/reviews-bg-top-berries.png") no-repeat;
@@ -702,7 +696,7 @@ button {
     height: 86px;
     position: absolute;
     z-index: 1;
-    top: 36px;
+    top: 5.5vh;
     right: 1.3vw; }
   .reviews:after {
     content: "";
@@ -714,7 +708,45 @@ button {
     left: 0;
     bottom: -140px; }
 
-.user-review {
+.reviews__container {
+  width: 940px;
+  margin: 0 auto; }
+
+.reviews__title {
+  margin-bottom: 40px;
+  text-align: center; }
+
+.reviews__switcher {
+  height: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.reviews__switch-btn--selected .reviews__small-pic {
+  border: 5px solid #0f5a47;
+  margin: 0px 5px; }
+  .reviews__switch-btn--selected .reviews__small-pic:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+.reviews__small-pic {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin: 0px 10px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+  .reviews__small-pic:hover {
+    -webkit-box-shadow: 0 0 5px #000000;
+    box-shadow: 0 0 5px #000000; }
+
+.review-snippet {
   height: 345px;
   background: url("../img/bg/review-bg-half-circle.jpg") no-repeat top center, #f8faf9 url("../img/bg/review-bg-branch.jpg") no-repeat top right;
   display: -webkit-box;
@@ -726,57 +758,32 @@ button {
   -ms-flex-align: center;
   align-items: center;
   padding-left: 45px; }
-  .user-review__content {
-    max-width: 435px;
-    height: 260px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-left: 25px;
-    text-align: left;
-    padding-top: 20px; }
-  .user-review__title {
-    font-size: 30px;
-    color: #323232;
-    font-weight: 500;
-    margin: 0px;
-    margin-right: auto; }
-  .user-review__text {
-    color: #666666;
-    font-size: 18px;
-    margin: 0px; }
-  .user-review__author {
-    color: #666666;
-    font-size: 18px; }
 
-.reviews-users {
-  height: 135px;
+.review-snippet__content {
+  max-width: 435px;
+  height: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  .reviews-users__pic {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0px 10px; }
-    .reviews-users__pic:hover {
-      -webkit-box-shadow: 0 0 5px #000000;
-      box-shadow: 0 0 5px #000000; }
-    .reviews-users__pic--selected {
-      border: 5px solid #0f5a47;
-      margin: 0px 5px; }
-      .reviews-users__pic--selected:hover {
-        -webkit-box-shadow: none;
-        box-shadow: none; }
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 25px;
+  text-align: left;
+  padding-top: 20px; }
+
+.review-snippet__title {
+  font-size: 30px;
+  color: #323232;
+  font-weight: 500;
+  margin-right: auto; }
+
+.review-snippet__text {
+  color: #666666;
+  font-size: 18px; }
+
+.review-snippet__author {
+  color: #666666;
+  font-size: 18px; }
 
 .fixed-menu {
   position: fixed;
@@ -806,42 +813,3 @@ button {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-
-.link {
-  text-decoration: none;
-  color: #ffffff; }
-
-.phone-num {
-  font-size: 24px;
-  line-height: 30px;
-  font-family: "Alegreya Sans";
-  text-transform: uppercase; }
-  .phone-num__icon {
-    width: 11px;
-    height: 11px;
-    fill: #ffffff;
-    margin-right: 2px; }
-
-.dotted-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
-  .dotted-list__item {
-    margin: 0 0 1.6vh 0;
-    width: 0.63vh;
-    height: 0.63vh;
-    padding: 0px; }
-  .dotted-list__item--selected .dot__outter {
-    visibility: visible; }
-  .dotted-list__item:last-child {
-    margin: 0px; }
-
-.dot__outter {
-  visibility: hidden; }

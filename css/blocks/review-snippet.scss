@@ -1,0 +1,34 @@
+.review-snippet {
+    height: 345px;
+    background: url("../img/bg/review-bg-half-circle.jpg") no-repeat top center, #f8faf9 url("../img/bg/review-bg-branch.jpg") no-repeat top right, ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 45px;
+}
+
+.review-snippet__content {
+    max-width: 435px;
+    height: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.review-snippet__title {
+    font-size:30px;
+    color: $title-dark-grey;
+    font-weight: $medium;
+    margin-right: auto;
+    
+}
+
+.review-snippet__text {
+    @include grey-text;
+}
+
+.review-snippet__author {
+    @include grey-text;
+}

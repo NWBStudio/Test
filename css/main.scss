@@ -25,6 +25,7 @@ $icon-light-blue: #aef5fe;
 
 //blocks
 @import "./blocks/header.scss";
+@import "./blocks/phone-num.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/hero.scss";
@@ -32,55 +33,6 @@ $icon-light-blue: #aef5fe;
 @import "./blocks/why.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/reviews.scss";
+@import "./blocks/review-snippet.scss";
 @import "./blocks/fixed-menu.scss";
-
-.link {
-    text-decoration: none;
-    color: $white;
-}
-
-.phone-num {
-    font-size: 24px;
-    line-height: 30px;
-    font-family: "Alegreya Sans";
-    text-transform: uppercase;
-
-    &__icon {
-        width: 11px;
-        height: 11px;
-        fill: $white;
-        margin-right: 2px;
-    }
-}
-
-.dotted-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    &__item {
-        margin: 0 0 1.6vh 0;
-        width: 0.63vh;
-        height: 0.63vh;
-        padding: 0px;
-    }
-
-    &__item--selected {
-        .dot__outter {
-            visibility: visible;
-        }
-    }
-
-    &__item:last-child {
-        margin: 0px;
-    }
-
-}
-
-.dot__outter {
-    visibility: hidden;
-    ;
-}
-
-
 

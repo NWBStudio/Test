@@ -1,0 +1,15 @@
+.phone-num {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "Alegreya Sans";
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+}
+
+.phone-num__icon {
+    width: 11px;
+    height: 11px;
+    fill: $white;
+    margin-right: 2px;
+}
